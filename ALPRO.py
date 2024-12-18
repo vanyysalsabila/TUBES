@@ -34,7 +34,11 @@ soal_kuis = [
 ]
 
 # Stack untuk menyimpan riwayat perubahan soal
-soal_stack = []
+soal_stack = [
+    {"soal": "Apa ibu kota Indonesia?", "opsi": ["Jakarta", "Surabaya", "Bandung"], "jawaban": 0},
+    {"soal": "Berapa hasil dari 5 + 3?", "opsi": ["6", "8", "10"], "jawaban": 1},
+    {"soal": "Siapa penemu lampu pijar?", "opsi": ["Nikola Tesla", "Albert Einstein", "Thomas Edison"], "jawaban": 2}
+]
 
 # Queue untuk menyimpan antrian soal yang belum ditampilkan
 soal_queue = deque()
