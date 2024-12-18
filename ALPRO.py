@@ -112,8 +112,15 @@ def mulai_kuis():
     if not soal_kuis:
         messagebox.showerror("Error", "Belum ada soal yang tersedia!")
         return
+    
+    # Memuat semua soal dari soal_kuis ke dalam queue
+    soal_queue.clear()
+    for soal in soal_kuis:
+        soal_queue.append(soal)
+        
     main_menu_frame.pack_forget()
     tampilkan_soal(0, 0)
+
 
 # Fungsi untuk menampilkan soal satu per satu
 def tampilkan_soal(indeks, skor):
