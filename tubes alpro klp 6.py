@@ -111,13 +111,13 @@ def mulai_kuis():
     tampilkan_soal(0, 0)
 
 # Fungsi untuk kembali ke Menu Utama
-    def kembali_ke_menu_utama():
-        # Sembunyikan semua widget yang ada
-        for widget in root.winfo_children():
-            widget.pack_forget()
-        
-        # Tampilkan kembali frame menu utama
-        main_menu_frame.pack()
+def kembali_ke_menu_utama():
+    # Sembunyikan semua widget yang ada
+    for widget in root.winfo_children():
+        widget.pack_forget()
+    
+    # Tampilkan kembali frame menu utama
+    main_menu_frame.pack()
 
 # Fungsi untuk menampilkan halaman skor
 def tampilkan_halaman_skor(skor):
